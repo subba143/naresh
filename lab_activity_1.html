@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Activity - 1</title>
+     <style>
+        body{
+        background:red;
+        color:orange;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Lab Activity 1: Making a Peanut Butter and Jelly Sandwich</h1>
+    <p>Instructions:</p>
+    <ol>
+        <li>Get two slices of bread.</li>
+        <li>Spread peanut butter on one slice.</li>
+        <li>Spread jelly on the other slice.</li>
+        <li>Put the two slices together to form a sandwich.</li>
+    </ol>
+    <p>Now, write down the steps required to make a peanut butter and jelly sandwich:</p>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="steps" rows="5" cols="50"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

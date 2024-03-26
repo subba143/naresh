@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Activity 2 - Form</title>
+     <style>
+        body{
+        background:skyblue;
+        color:yellow;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Lab Activity 2 - Form</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
